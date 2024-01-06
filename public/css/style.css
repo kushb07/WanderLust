@@ -1,0 +1,165 @@
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.container{
+    flex:1;
+}
+
+.navbar{
+    height: 5rem;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+
+.fa-hotel{
+    color : #fe424d;
+    height: 1.7rem;
+    margin-right: 0.5rem;
+}
+
+
+
+
+
+
+footer{
+    background-color: rgb(228, 222, 222);
+    margin-top: 2rem;
+}
+
+.f-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.8rem;
+    flex-wrap: wrap;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    color: #fe424d;
+}
+
+.f-info-socials{
+    font-size: 1.2rem;
+}
+
+
+/* #searchBasis
+
+{
+    height: 1rem;
+} */
+
+
+
+
+.listing-card{
+    border:none !important;
+    height: 500px !important;
+}
+
+.card-img-top{
+    border-radius: 2rem !important;
+    width: 100%;
+    height: 70%;
+}
+
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+.add-btn{
+    background-color: #fe424d !important;
+}
+
+.show-btn{
+    display: flex;
+}
+
+
+#map{
+    height: 400px;
+    width: 80vh;
+}
+
+#filters {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#filters a{
+    text-decoration: none;
+}
+
+.filter{
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    opacity: 0.7;
+    cursor: pointer;
+    
+}
+.filter p {
+    font-size: 0.8rem;
+}
+
+.filter:hover{
+    opacity : 1;
+}
+
+
+.tax-toggle{
+    border : 1px solid black;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 12rem;
+    height: 3.2rem;
+    padding: 1rem;
+}
+
+.tax-info{
+    display: none;
+}
+
+
+.btn-search{
+    background-color: #fe424d !important;
+    color:white !important;
+    border-radius: 3rem !important;
+    padding: 0 1rem 0 1rem;
+}
+
+.btn-search:hover{
+    background-color: #fe424d !important;
+    color:white !important;
+}
+
+.btn-search i{
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+
+
+
+
+

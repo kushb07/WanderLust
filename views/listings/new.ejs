@@ -1,0 +1,78 @@
+<%- layout("/layouts/boilerplate") %>
+<body>
+  
+    <div class="row">
+        <div class="col-8 offset-2">
+            
+    <form method="post" action="/listings" enctype="multipart/form-data" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title </label>
+            <input id= "title" type="text" name = "title" class="form-control" required>
+            <div class="valid-feedback">Title looks good!</div>
+            <div class="invalid-feedback">Please enter title</div>
+        </div>
+       
+       <div class="mb-3">
+            <label for="description" class="form-label">Description </label>
+            <textarea id="description"  name="description" class="form-control" required></textarea>
+            <div class="valid-feedback">Description looks good!</div>
+            <div class="invalid-feedback">Please enter short description</div>
+        </div>
+        
+       
+       <!-- <div class="mb-3">
+            <label for="image" class="form-label">Image link </label>
+            <input id= "image" type="text" name = "image" class= "form-control">
+        </div> -->
+
+       <div class="mb-3">
+            <label for="image" class="form-label">Upload Listing Image</label>
+            <input id= "image" type="file" name = "image" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="price" class="form-label">Price </label>
+            <input id="price" type="number" name = "price" class="form-control" required>
+            <div class="valid-feedback">Price looks good!</div>
+            <div class="invalid-feedback">Please enter valid price</div>
+        </div>
+        
+        <div class="row">
+            <div class="mb-3 col-4">
+                <label for="location" class="form-label">Location </label>
+                <input id="location" type="text" name="location" class="form-control" required>
+                <div class="valid-feedback">Location looks good!</div>
+                <div class="invalid-feedback">Please enter location name</div>
+            </div>
+            <div class="mb-3 col-8">
+                <label for="country" class="form-label">Country </label>
+                <input id="country" type="text" name="country" class="form-control" required>
+                <div class="valid-feedback">Country looks good!</div>
+                <div class="invalid-feedback">Please enter country name</div>
+            </div>
+
+            <div class="mb-3 col-8">
+                <label for="category" class="form-label">Category </label>
+                
+                <select id="category"  name="category" class="form-control">  
+                    <option value="trending">Trending</option>
+                    <option value="rooms">Rooms</option>
+                    <option value="iconicCities">Iconic Cities</option>
+                    <option value="mountain">Mountain</option>
+                    <option value="castles">Castles</option>
+                    <option value="amazingPools">Amazing Pools</option>
+                    <option value="camping">Camping</option>
+                    <option value="farms">Farms</option>
+                    <option value="arctic">Arctic</option>
+                </select>
+            
+            
+            </div>
+        </div>
+        
+        <button class="btn btn-dark add-btn" >Submit</button>
+    </form>
+</div>
+
+</div>
+</body>
